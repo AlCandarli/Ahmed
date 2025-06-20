@@ -1,0 +1,708 @@
+/* Analytics Section Styles */
+
+.analytics-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: #f9fafb;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  min-height: calc(100vh - 70px);
+}
+
+.analytics-container.dark {
+  background: #0f172a;
+}
+
+/* منطقة المحتوى الرئيسي */
+.analytics-content {
+  height: calc(100vh - 140px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  gap: 16px;
+}
+
+/* هيدر التحليل */
+.analytics-header {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.analytics-container.dark .analytics-header {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.analytics-title-section {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.analytics-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.analytics-container.dark .analytics-title {
+  color: #f9fafb;
+}
+
+.analytics-subtitle {
+  font-size: 14px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+.analytics-container.dark .analytics-subtitle {
+  color: #9ca3af;
+}
+
+/* إحصائيات سريعة */
+.analytics-quick-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.analytics-quick-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.analytics-container.dark .analytics-quick-stat {
+  background: #374151;
+}
+
+.analytics-quick-stat-number {
+  font-weight: bold;
+  color: #ec4899;
+}
+
+.analytics-quick-stat-label {
+  color: #64748b;
+}
+
+.analytics-container.dark .analytics-quick-stat-label {
+  color: #94a3b8;
+}
+
+/* شبكة التحليل */
+.analytics-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  flex: 1;
+}
+
+/* بطاقات التحليل */
+.analytics-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.analytics-container.dark .analytics-card {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.analytics-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.analytics-container.dark .analytics-card:hover {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.analytics-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.analytics-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analytics-container.dark .analytics-card-title {
+  color: #f9fafb;
+}
+
+.analytics-card-action {
+  padding: 6px 12px;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.analytics-container.dark .analytics-card-action {
+  background: #374151;
+  color: #d1d5db;
+}
+
+.analytics-card-action:hover {
+  background: #e2e8f0;
+}
+
+.analytics-container.dark .analytics-card-action:hover {
+  background: #4b5563;
+}
+
+/* منطقة الرسم البياني */
+.analytics-chart-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  background: #f8fafc;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+.analytics-container.dark .analytics-chart-area {
+  background: #0f172a;
+}
+
+.analytics-chart-placeholder {
+  text-align: center;
+  color: #64748b;
+}
+
+.analytics-container.dark .analytics-chart-placeholder {
+  color: #94a3b8;
+}
+
+/* مؤشرات الأداء */
+.analytics-metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 12px;
+}
+
+.analytics-metric {
+  text-align: center;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.analytics-container.dark .analytics-metric {
+  background: #0f172a;
+}
+
+.analytics-metric-value {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ec4899;
+  margin-bottom: 4px;
+}
+
+.analytics-metric-label {
+  font-size: 12px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.analytics-container.dark .analytics-metric-label {
+  color: #94a3b8;
+}
+
+/* الجانب الأيمن */
+.analytics-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* بطاقة النصائح */
+.analytics-tips-card {
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.analytics-tips-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: rotate(45deg);
+}
+
+.analytics-tips-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+.analytics-tips-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.analytics-tip-item {
+  font-size: 13px;
+  margin-bottom: 8px;
+  padding-left: 16px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.analytics-tip-item::before {
+  content: '💡';
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* بطاقة التقدم */
+.analytics-progress-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-container.dark .analytics-progress-card {
+  background: #1f2937;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.analytics-progress-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.analytics-container.dark .analytics-progress-title {
+  color: #f9fafb;
+}
+
+.analytics-progress-item {
+  margin-bottom: 16px;
+}
+
+.analytics-progress-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.analytics-progress-name {
+  color: #374151;
+}
+
+.analytics-container.dark .analytics-progress-name {
+  color: #d1d5db;
+}
+
+.analytics-progress-value {
+  color: #ec4899;
+  font-weight: 600;
+}
+
+.analytics-progress-bar {
+  width: 100%;
+  height: 6px;
+  background: #e2e8f0;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.analytics-container.dark .analytics-progress-bar {
+  background: #475569;
+}
+
+.analytics-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ec4899 0%, #be185d 100%);
+  border-radius: 3px;
+  transition: width 0.8s ease;
+}
+
+/* تجاوب الشاشات */
+@media (max-width: 1024px) {
+  .analytics-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .analytics-sidebar {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .analytics-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .analytics-quick-stats {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .analytics-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* زر التحليل الذكي المتقدم */
+.analytics-ai-button {
+  width: 100%;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0;
+  background: linear-gradient(135deg,
+    #667eea 0%,
+    #764ba2 50%,
+    #f093fb 100%
+  );
+  color: white;
+  border: none;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow:
+    0 8px 32px rgba(102, 126, 234, 0.3),
+    0 2px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.analytics-ai-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.analytics-ai-button:hover::before {
+  left: 100%;
+}
+
+.analytics-ai-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 12px 40px rgba(102, 126, 234, 0.4),
+    0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.analytics-ai-button:disabled {
+  opacity: 0.8;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.analytics-ai-button.analyzing {
+  background: linear-gradient(135deg,
+    #4facfe 0%,
+    #00f2fe 100%
+  );
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow:
+      0 8px 32px rgba(79, 172, 254, 0.3),
+      0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 12px 48px rgba(79, 172, 254, 0.5),
+      0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.analytics-ai-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* شريط تقدم التحليل */
+.analytics-progress-container {
+  margin: 1rem 0;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+}
+
+.analytics-progress-text {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.analytics-container.dark .analytics-progress-text {
+  color: #9ca3af;
+}
+
+/* نتائج التحليل الذكي */
+.analytics-ai-results {
+  margin: 2rem 0;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.1),
+    0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.analytics-container.dark .analytics-ai-results {
+  background: rgba(31, 41, 55, 0.95);
+  border-color: rgba(75, 85, 99, 0.3);
+}
+
+.analytics-ai-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.2);
+}
+
+.analytics-ai-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.analytics-container.dark .analytics-ai-title {
+  color: #f9fafb;
+}
+
+.analytics-ai-badges {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.analytics-ai-badge {
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.analytics-ai-badge.success {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.analytics-ai-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.analytics-ai-card {
+  padding: 1.5rem;
+  background: linear-gradient(135deg,
+    rgba(248, 250, 252, 0.8) 0%,
+    rgba(241, 245, 249, 0.8) 100%
+  );
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  transition: all 0.3s ease;
+}
+
+.analytics-ai-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-container.dark .analytics-ai-card {
+  background: linear-gradient(135deg,
+    rgba(15, 23, 42, 0.8) 0%,
+    rgba(30, 41, 59, 0.8) 100%
+  );
+  border-color: rgba(51, 65, 85, 0.6);
+}
+
+.analytics-ai-card h3 {
+  margin: 0 0 1rem 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e40af;
+}
+
+.analytics-container.dark .analytics-ai-card h3 {
+  color: #60a5fa;
+}
+
+.analytics-ai-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.analytics-ai-card li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  color: #374151;
+  line-height: 1.6;
+}
+
+.analytics-ai-card li:last-child {
+  border-bottom: none;
+}
+
+.analytics-container.dark .analytics-ai-card li {
+  color: #d1d5db;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
+
+/* التنبؤ بالأداء */
+.analytics-prediction {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.analytics-prediction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(102, 126, 234, 0.1);
+  border-radius: 8px;
+}
+
+.analytics-prediction-value {
+  font-weight: 700;
+  color: #059669;
+}
+
+.analytics-prediction-confidence {
+  font-weight: 700;
+  color: #7c3aed;
+}
+
+/* رسالة تحفيزية */
+.analytics-motivation {
+  padding: 1.5rem;
+  background: linear-gradient(135deg,
+    rgba(34, 197, 94, 0.1) 0%,
+    rgba(59, 130, 246, 0.1) 100%
+  );
+  border: 1px solid rgba(34, 197, 94, 0.2);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.analytics-motivation h3 {
+  margin: 0 0 1rem 0;
+  color: #059669;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.analytics-motivation p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #374151;
+}
+
+.analytics-container.dark .analytics-motivation {
+  background: linear-gradient(135deg,
+    rgba(34, 197, 94, 0.2) 0%,
+    rgba(59, 130, 246, 0.2) 100%
+  );
+}
+
+.analytics-container.dark .analytics-motivation h3 {
+  color: #34d399;
+}
+
+.analytics-container.dark .analytics-motivation p {
+  color: #d1d5db;
+}

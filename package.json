@@ -1,0 +1,75 @@
+{
+  "name": "ai-educational-platform",
+  "version": "1.0.0",
+  "description": "منصة التعليم الذكية - AI Educational Platform",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "install:all": "npm install && npm run install:frontend && npm run install:backend",
+    "install:frontend": "cd frontend && npm install",
+    "install:backend": "cd backend && npm install",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm run preview",
+    "build": "npm run build:frontend && npm run build:backend",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "test": "npm run test:frontend && npm run test:backend",
+    "test:frontend": "cd frontend && npm test",
+    "test:backend": "cd backend && npm test",
+    "lint": "npm run lint:frontend && npm run lint:backend",
+    "lint:frontend": "cd frontend && npm run lint",
+    "lint:backend": "cd backend && npm run lint",
+    "clean": "npm run clean:backend && npm run clean:frontend",
+    "clean:backend": "cd backend && rm -rf node_modules package-lock.json",
+    "clean:frontend": "cd frontend && rm -rf node_modules package-lock.json",
+    "setup": "npm run install:all && npm run setup:env",
+    "setup:env": "echo 'تم إعداد البيئة بنجاح'",
+    "health": "curl http://localhost:5000/health && curl http://localhost:5173"
+  },
+  "keywords": [
+    "education",
+    "ai",
+    "arabic",
+    "learning",
+    "platform",
+    "react",
+    "nodejs",
+mongodb
+  ],
+  "author": "AI Educational Platform Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "concurrently": "^8.2.2",
+    "cross-env": "^7.0.3",
+    "eslint": "^8.55.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/ai-educational-platform.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/ai-educational-platform/issues"
+  },
+  "homepage": "https://github.com/your-username/ai-educational-platform#readme",
+  "dependencies": {
+    "connect-mongo": "^5.1.0",
+    "express-session": "^1.18.1",
+    "xss-clean": "^0.1.4"
+  }
+}

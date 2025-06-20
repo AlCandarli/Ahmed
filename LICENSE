@@ -1,0 +1,77 @@
+MIT License
+
+Copyright (c) 2025 Ahmed Mushtaq Al Candarli
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+# رخصة MIT - النسخة العربية
+
+حقوق الطبع والنشر (c) 2025 أحمد مشتاق آل جندرلي
+
+يُمنح بموجب هذا، مجاناً، لأي شخص يحصل على نسخة من هذا البرنامج 
+وملفات التوثيق المرتبطة به ("البرنامج")، الحق في التعامل مع البرنامج 
+دون قيود، بما في ذلك على سبيل المثال لا الحصر، حقوق الاستخدام والنسخ 
+والتعديل والدمج والنشر والتوزيع والترخيص من الباطن و/أو بيع نسخ من 
+البرنامج، والسماح للأشخاص الذين يُقدم لهم البرنامج بذلك، وفقاً للشروط التالية:
+
+يجب تضمين إشعار حقوق الطبع والنشر أعلاه وإشعار الإذن هذا في جميع 
+النسخ أو الأجزاء الجوهرية من البرنامج.
+
+يُقدم البرنامج "كما هو"، دون ضمان من أي نوع، صريح أو ضمني، بما في ذلك 
+على سبيل المثال لا الحصر، ضمانات القابلية للتسويق والملاءمة لغرض معين 
+وعدم الانتهاك. في أي حال من الأحوال، لن يكون المؤلفون أو أصحاب حقوق 
+الطبع والنشر مسؤولين عن أي مطالبة أو أضرار أو مسؤولية أخرى، سواء في 
+دعوى تعاقدية أو تقصيرية أو غير ذلك، الناشئة من أو خارج أو فيما يتعلق 
+بالبرنامج أو الاستخدام أو التعاملات الأخرى في البرنامج.
+
+---
+
+## معلومات إضافية
+
+### المساهمون
+- أحمد مشتاق آل جندرلي - المطور الرئيسي
+- د.ا.م محسن حسن - المشرف الأكاديمي
+- Fenix - مطور Frontend
+- فهد - مطور Backend
+- محمد أحمد - تطوير نموذج المحاضرات
+- مهيمن حسن - تحسين خوارزميات AI
+
+### شكر خاص
+نتقدم بالشكر لجميع المساهمين والمختبرين الذين ساعدوا في تطوير هذه المنصة.
+
+### الاستخدام التجاري
+هذا البرنامج مرخص تحت رخصة MIT، مما يعني أنه يمكن استخدامه لأغراض تجارية 
+دون قيود، طالما تم الالتزام بشروط الرخصة.
+
+### الدعم
+للحصول على الدعم أو الإبلاغ عن المشاكل، يرجى زيارة:
+- GitHub: https://github.com/ahmed-mushtaq/ai-educational-platform
+- البريد الإلكتروني: www.amnesty55@gmail.com
+
+### التحديثات
+يتم تحديث هذا البرنامج بانتظام. للحصول على أحدث الإصدارات، يرجى 
+زيارة المستودع الرسمي على GitHub.
+
+---
+
+تاريخ الإنشاء: 2025-01-20
+آخر تحديث: 2025-01-20
+الإصدار: 1.0.0
